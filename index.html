@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form action=https://usebasin.com/f/a510b036441f method= "POST" lpchecked="1">
+			<h3>Contact form</h3>
+			<input type="text" id="name" placeholder="Your Name" required>
+			<input type="email" id="email" placeholder="Email id" required>
+			<input type="text" id="phone" placeholder="Contact Number" required>
+			<div class="form-group">
+                <label for="year level">Year Level:</label>
+                <select id="year level" name="year level">
+                    <option value="first yesr">First year</option>
+                    <option value="second year">Second year</option>
+                    <option value="third year">Third year</option>
+                    <option value="fourth year">Fourth year</option>
+                </select>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label>Preferred Contact:</label>
+                <input type="checkbox" id="Phone number" name="interests[]" value="Phone number">
+                <label for="Phone number">Phone No.</label>
+                <input type="checkbox" id="email" name="interests[]" value="email">
+                <label for="email">Email</label>
+            </div>    
+			<textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+			<button type="submit">Submit</button>
+		</form>
+		
+	</div>
+
+</body>
+</html>
